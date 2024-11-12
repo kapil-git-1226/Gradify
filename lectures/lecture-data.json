@@ -2,13 +2,13 @@
   "navigation": {
     "logo": "GRADIFY",
     "links": [
-      { "text": "Home", "url": "../dashboard/gradify-static.html" },
-      { "text": "Lectures", "url": "../lectures/lectures-page.html" },
-      { "text": "Notes", "url": "../notes/gradify-notes.html" },
-      { "text": "PYQ", "url": "../pyq/pyq.html" },
-      { "text": "Grade Predictor", "url": "../grade_calculator/gradify-calculator.html" },
-      { "text": "About", "url": "../about/gradify-about.html" },
-      { "text": "Groups", "url": "#" }
+      { "text": "Home", "url": "./../dashboard/gradify-html.html" },
+      { "text": "Lectures", "url": "./../lectures/lecture-interface.html" },
+      { "text": "Notes", "url": "./../notes/notes-page.html" },
+      { "text": "PYQ", "url": "./../pyqs/pyqs-page.html" },
+      { "text": "Grade Predictor", "url": "./../Grade_predictor/grade_predictor.html" },
+      { "text": "About", "url": "./../about/about-page.html" },
+      { "text": "Groups", "url": "./../Groups/group-page.html"}
     ]
   },
   "semesters": {
@@ -69,6 +69,108 @@
     },
     "2": {
       "name": "Second Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "3": {
+      "name": "Third Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "4": {
+      "name": "Fourth Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "5": {
+      "name": "Fifth Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "6": {
+      "name": "Sixth Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "7": {
+      "name": "Seventh Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "8": {
+      "name": "Eigth Semester",
       "subjects": {
         "CSE201": {
           "name": "Data Structures",

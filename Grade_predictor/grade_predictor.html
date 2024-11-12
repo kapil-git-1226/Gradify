@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradify - Grade Calculator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+      }
+
+      body {
+        background-color: #1a1a1a;
+        color: white;
+        min-height: 100vh;
+      }
+
+      .navbar {
+        background-color: #242424;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      .nav-links a {
+        color: #e0e0e0;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .nav-links a:hover {
+        color: white;
+      }
+
+      .profile-btn {
+        background-color: #333;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .hamburger {
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0.5rem;
+      }
+
+      .hamburger div {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
+      }
+
+      .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #242424;
+        overflow-x: hidden;
+        transition: 0.3s;
+        padding-top: 60px;
+        z-index: 999;
+      }
+
+      .sidebar a {
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        display: block;
+        white-space: nowrap;
+      }
+
+      .sidebar a:hover {
+        background-color: #333;
+      }
+
+      .sidebar .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .sidebar-active {
+        width: 250px;
+      }
+
+      .content-shifted {
+        margin-left: 250px;
+      }
+
+      .main-content {
+        padding: 2rem;
+        transition: margin-left 0.3s ease;
+      }
+
+      .calculator-title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .calculator-container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #242424;
+        padding: 2rem;
+        border-radius: 15px;
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: #e0e0e0;
+        font-size: 1.1rem;
+      }
+
+      .desired-cgpa {
+        color: #06b6d4;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      input[type="number"] {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #333;
+        border: 1px solid #444;
+        border-radius: 5px;
+        color: white;
+        font-size: 1rem;
+      }
+
+      input[type="number"]:focus {
+        outline: none;
+        border-color: #06b6d4;
+      }
+
+      .required-sgpa {
+        color: #06b6d4;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+      }
+
+      .calculate-btn {
+        width: 100%;
+        padding: 1rem;
+        background-color: #06b6d4;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .calculate-btn:hover {
+        background-color: #0891b2;
+      }
+
+      /* New styles for result messages */
+      .result-container {
+        margin-top: 1.5rem;
+        padding: 1rem;
+        border-radius: 5px;
+        background-color: #333;
+        text-align: center;
+      }
+
+      .result-text {
+        font-size: 1.1rem;
+        color: #e0e0e0;
+        margin-bottom: 0.5rem;
+      }
+
+      .error-message {
+        color: #ef4444;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      .success-message {
+        color: #06b6d4;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 1rem;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hamburger {
+          display: block;
+        }
+
+        .main-content.content-shifted {
+          margin-left: 250px;
+        }
+
+        .calculator-container {
+          margin: 0 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <span class="close-btn" onclick="toggleSidebar()">×</span>
+      <a href="./../dashboard/gradify-html.html">Home</a>
+      <a href="./../lectures/lecture-interface.html">Lectures</a>
+      <a href="./../notes/notes-page.html">Notes</a>
+      <a href="./../pyqs/pyqs-page.html">PYQ</a>
+      <a href="./../Grade_predictor/grade_predictor.html"
+        >Grade Predictor</a
+      >
+      <a href="./../about/about-page.html">About</a>
+      <a href="./../Groups/group-page.html">Groups</a>
+      <a href="#">Profile</a>
+    </div>
+
+    <nav class="navbar">
+      <button class="hamburger" onclick="toggleSidebar()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <a href="#" class="logo">GRADIFY</a>
+      <div class="nav-links">
+        <a href="./../dashboard/gradify-html.html">Home</a>
+        <a href="./../lectures/lecture-interface.html">Lectures</a>
+        <a href="./../notes/notes-page.html">Notes</a>
+        <a href="./../pyqs/pyqs-page.html">PYQ</a>
+        <a href="./../Grade_predictor/grade_predictor.html">Grade Predictor</a>
+        <a href="./../about/about-page.html">About</a>
+        <a href="./../Groups/group-page.html">Groups</a>
+        <button class="profile-btn">Profile</button>
+      </div>
+    </nav>
+
+    <div class="main-content" id="main-content">
+      <h2 class="calculator-title">📊 Grade Calculator</h2>
+
+      <div class="calculator-container">
+        <div class="desired-cgpa">
+          Desired CGPA :
+          <input
+            type="number"
+            step="0.01"
+            value="0"
+            min="0"
+            max="10"
+            placeholder="Enter target CGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 1 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            value="0"
+            max="10"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 2 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 3 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 4 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 5 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 6 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 7 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <div class="form-group">
+          <label>Semester 8 :</label>
+          <input
+            type="number"
+            step="0.01"
+            min="0"
+            max="10"
+            value="0"
+            placeholder="Enter SGPA"
+          />
+        </div>
+
+        <button type="submit" class="calculate-btn">Calculate</button>
+        <div id="result-message"></div>
+      </div>
+    </div>
+
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("sidebar-active");
+        document.getElementById("main-content").classList.toggle("content-shifted");
+      }
+
+      document.querySelectorAll('input[type="number"]').forEach((input) => {
+        input.addEventListener("input", function () {
+          let value = parseFloat(this.value);
+          if (value < 0) this.value = 0;
+          if (value > 10) this.value = 10;
+        });
+      });
+
+      function getCgpaAndSgpaSum() {
+        const desiredCgpaInput = document.querySelector('.desired-cgpa input[type="number"]');
+        const desiredCgpa = parseFloat(desiredCgpaInput.value) || 0;
+        const sgpaInputs = document.querySelectorAll('.calculator-container .form-group input[type="number"]');
+        let sgpaSum = 0;
+        let completedSemesters = 0;
+        
+        sgpaInputs.forEach((input) => {
+          let value = parseFloat(input.value);
+          if (!isNaN(value) && value !== 0) {
+            sgpaSum += value;
+            completedSemesters++;
+          }
+        });
+        
+        return { desiredCgpa, sgpaSum, completedSemesters };
+      }
+
+      function displayResult(requiredSGPA, remainingSemesters) {
+        const resultContainer = document.getElementById('result-message');
+        
+        if (requiredSGPA > 10) {
+          resultContainer.innerHTML = `
+            <div class="error-message">
+              It is not possible to achieve the desired CGPA with the current grades.
+              <br>Required SGPA per semester would be ${requiredSGPA.toFixed(2)}, which exceeds the maximum possible SGPA of 10.0
+            </div>
+          `;
+        } else if (remainingSemesters <= 0) {
+          resultContainer.innerHTML = `
+            <div class="error-message">
+              All semesters are completed. No further calculation needed.
+            </div>
+          `;
+        } else {
+          resultContainer.innerHTML = `
+            <div class="success-message">
+              To achieve your desired CGPA, you need to maintain an SGPA of ${requiredSGPA.toFixed(2)} 
+              for the remaining ${remainingSemesters} semester${remainingSemesters > 1 ? 's' : ''}.
+            </div>
+          `;
+        }
+      }
+
+      document.querySelector(".calculate-btn").addEventListener("click", () => {
+        const { desiredCgpa, sgpaSum, completedSemesters } = getCgpaAndSgpaSum();
+        const remainingSemesters = 8 - completedSemesters;
+        
+        if (desiredCgpa === 0) {
+          displayResult(0, remainingSemesters);
+          return;
+        }
+        
+        const requiredSGPApersem = (desiredCgpa * 8 - sgpaSum) / remainingSemesters;
+        displayResult(requiredSGPApersem, remainingSemesters);
+      });
+    </script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 {
-  "pageTitle": "Gradify - Notes",
+  "pageTitle": "Gradify - PYQ",
   "navigation": {
     "logo": "GRADIFY",
     "links": [
@@ -19,7 +19,7 @@
   "mainContent": {
     "heading": {
       "icon": "📚",
-      "text": "Notes"
+      "text": "Previous Year Questions"
     },
     "selectors": {
       "semester": {
@@ -44,14 +44,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -63,7 +63,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -80,7 +80,7 @@
               "title": "Arrays and Linked Lists",
               "description": "Comprehensive guide on basic data structures",
               "pdfUrl": "https://drive.google.com/file/d/example4/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -97,14 +97,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -116,7 +116,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -133,14 +133,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -152,7 +152,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -169,14 +169,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -188,7 +188,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -205,14 +205,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -224,7 +224,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -241,14 +241,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -260,7 +260,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }
@@ -277,14 +277,14 @@
               "title": "Python Basics",
               "description": "Fundamental concepts of Python programming",
               "pdfUrl": "https://drive.google.com/file/d/example1/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             },
             {
               "id": "cse101_2",
               "title": "Variables and Data Types",
               "description": "Comprehensive guide on Python variables and data types",
               "pdfUrl": "https://drive.google.com/file/d/example2/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         },
@@ -296,7 +296,7 @@
               "title": "Mechanics Fundamentals",
               "description": "Basic concepts of motion and forces",
               "pdfUrl": "https://drive.google.com/file/d/example3/preview",
-              "thumbnail": "./../Resources/pdf1.jpeg"
+              "thumbnail": "./../Resources/paper1.jpeg"
             }
           ]
         }

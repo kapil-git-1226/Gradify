@@ -8,17 +8,10 @@ class NotesApp {
 
     async init() {
         try {
-            // Fetch data
-            const response = await fetch('notes-data.json');
+            const response = await fetch('group-page.json');
             this.data = await response.json();
-            
-            // Set page title
             document.title = this.data.pageTitle;
-            
-            // Generate initial HTML
             this.generateHTML();
-            
-            // Setup event listeners
             this.setupEventListeners();
         } catch (error) {
             console.error('Error initializing app:', error);
@@ -67,11 +60,9 @@ class NotesApp {
     }
 
     setupEventListeners() {
-        // Handle dropdown toggles
         document.querySelectorAll('.select-wrapper').forEach(wrapper => {
             const btn = wrapper.querySelector('.select-btn');
             btn.addEventListener('click', () => {
-                // Close other dropdowns
                 document.querySelectorAll('.select-wrapper.active').forEach(w => {
                     if (w !== wrapper) w.classList.remove('active');
                 });
@@ -79,7 +70,6 @@ class NotesApp {
             });
         });
 
-        // Close dropdowns when clicking outside
         document.addEventListener('click', (e) => {
             if (!e.target.closest('.select-wrapper')) {
                 document.querySelectorAll('.select-wrapper.active').forEach(w => 
@@ -88,7 +78,6 @@ class NotesApp {
             }
         });
 
-        // Handle semester selection
         const semesterDropdown = document.querySelector('#semester-select .dropdown-content');
         semesterDropdown.addEventListener('click', (e) => {
             const button = e.target.closest('button');
@@ -97,7 +86,6 @@ class NotesApp {
             }
         });
 
-        // Handle subject selection
         const subjectDropdown = document.querySelector('#subject-select .dropdown-content');
         subjectDropdown.addEventListener('click', (e) => {
             const button = e.target.closest('button');
@@ -111,10 +99,8 @@ class NotesApp {
         this.currentSemester = semesterId;
         const semester = this.data.semesters[semesterId];
         
-        // Update semester button text
         document.querySelector('#semester-select .select-btn').textContent = semester.name;
         
-        // Update subject dropdown
         const subjectSelect = document.getElementById('subject-select');
         const subjectDropdown = subjectSelect.querySelector('.dropdown-content');
         
@@ -122,15 +108,12 @@ class NotesApp {
             `<button data-subject="${id}">${subject.name}</button>`
         ).join('');
         
-        // Show subject select
         subjectSelect.style.display = 'block';
         
-        // Reset subject selection
         subjectSelect.querySelector('.select-btn').textContent = 
             this.data.mainContent.selectors.subject.defaultText;
         document.getElementById('notes-grid').innerHTML = '';
         
-        // Close dropdown
         document.getElementById('semester-select').classList.remove('active');
     }
 
@@ -138,13 +121,10 @@ class NotesApp {
         this.currentSubject = subjectId;
         const subject = this.data.semesters[this.currentSemester].subjects[subjectId];
         
-        // Update subject button text
         document.querySelector('#subject-select .select-btn').textContent = subject.name;
         
-        // Display notes
         this.displayNotes(subject.notes);
         
-        // Close dropdown
         document.getElementById('subject-select').classList.remove('active');
     }
 
@@ -152,10 +132,10 @@ class NotesApp {
         const notesGrid = document.getElementById('notes-grid');
         notesGrid.innerHTML = notes.map(note => `
             <div class="note-card">
-                <a href="${note.pdfUrl}" target="_blank" class="note-link">
+                <a href="${note.whatsappUrl}" target="_blank" class="note-link">
                     <div class="note-thumbnail-wrapper">
                         <img class="note-thumbnail" src="${note.thumbnail}" alt="${note.title}">
-                        <div class="pdf-icon">📄</div>
+                        <div class="whatsapp-icon">💬</div>
                     </div>
                     <div class="note-info">
                         <h3 class="note-title">${note.title}</h3>
@@ -167,7 +147,6 @@ class NotesApp {
     }
 }
 
-// Initialize the app
 document.addEventListener('DOMContentLoaded', () => {
     new NotesApp();
 });

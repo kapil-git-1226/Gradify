@@ -1,0 +1,56 @@
+{
+    "coreTeam": [
+      {
+        "name": "Kush Munjal",
+        "role": "Member 1",
+        "photo": "./../Resources/person_image.png",
+        "social": {
+          "email": "kush.munjal.23cse@bmu.edu.in",
+          "linkedin": "https://linkedin.com/in/kushmunjal",
+          "github": "https://github.com/kushmunjal"
+        }
+      },
+      {
+        "name": "Devansh Shukla",
+        "role": "Member 2",
+        "photo": "./../Resources/person_image.png",
+        "social": {
+          "email": "devansh.shukla.23cse@bmu.edu.in",
+          "linkedin": "https://linkedin.com/in/devanshshukla",
+          "github": "https://github.com/devanshshukla"
+        }
+      },
+      {
+        "name": "Kapil Gangwar",
+        "role": "Member 3",
+        "photo": "./../Resources/person_image.png",
+        "social": {
+          "email": "kapil.gangwar.23cse@bmu.edu.in",
+          "linkedin": "https://linkedin.com/in/kapilgangwar",
+          "github": "https://github.com/kapilgangwar"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "name": "Pratik Raj Verma",
+        "role": "Course Coordinator",
+        "photo": "./../Resources/person_image.png",
+        "social": {
+          "email": "pratikrajverma@gmail.com",
+          "linkedin": "https://linkedin.com/in/pratikrajverma",
+          "github": "https://github.com/pratikrajverma"
+        }
+      },
+      {
+        "name": "Dr. Kiran Khatter",
+        "role": "Academic Advisor",
+        "photo": "./../Resources/person_image.png",
+        "social": {
+          "email": "kirankhatter@gmail.com",
+          "linkedin": "https://linkedin.com/in/kirankhatter",
+          "github": "https://github.com/kirankhatter"
+        }
+      }
+    ]
+  }

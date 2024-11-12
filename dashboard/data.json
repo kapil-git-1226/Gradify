@@ -6,13 +6,13 @@
         "link": "./../dashboard/gradify-static.html"
       },
       "links": [
-        { "text": "Home", "link": "#" },
-        { "text": "Lectures", "link": "./../lectures/lectures-page.html" },
-        { "text": "Notes", "link": "./../notes/gradify-notes.html" },
-        { "text": "PYQ", "link": "./../pyq/pyq.html" },
-        { "text": "Grade Predictor", "link": "./../grade_calculator/gradify-calculator.html" },
-        { "text": "About", "link": "./../about/gradify-about.html" },
-        { "text": "Groups", "link": "#" }
+        { "text": "Home", "link": "./../dashboard/gradify-html.html" },
+        { "text": "Lectures", "link": "./../lectures/lecture-interface.html" },
+        { "text": "Notes", "link": "./../notes/notes-page.html" },
+        { "text": "PYQ", "link": "./../pyqs/pyqs-page.html" },
+        { "text": "Grade Predictor", "link": "./../Grade_predictor/grade_predictor.html" },
+        { "text": "About", "link": "./../about/about-page.html" },
+        { "text": "Groups", "link": "./../Groups/group-page.html" }
       ]
     },
     "hero": {
@@ -27,27 +27,27 @@
       {
         "icon": "💻",
         "text": "Lectures",
-        "link": "./../lectures/lectures-page.html"
+        "link": "./../lectures/lecture-interface.html"
       },
       {
         "icon": "✏️",
         "text": "Notes",
-        "link": "./../notes/gradify-notes.html"
+        "link": "./../notes/notes-page.html"
       },
       {
         "icon": "📄",
         "text": "PYQ",
-        "link": "./../pyq/pyq.html"
+        "link": "./../pyqs/pyqs-page.html"
       },
       {
         "icon": "✓",
         "text": "Grade Predictor",
-        "link": "./../grade_calculator/gradify-calculator.html"
+        "link": "./../Grade_predictor/grade_predictor.html"
       },
       {
         "icon": "👥",
         "text": "Groups",
-        "link": "#"
+        "link": "./../Groups/group-page.html"
       }
     ],
     "importantDocuments": {

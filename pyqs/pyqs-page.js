@@ -9,7 +9,7 @@ class NotesApp {
     async init() {
         try {
             // Fetch data
-            const response = await fetch('notes-data.json');
+            const response = await fetch('pyqs-page.json');
             this.data = await response.json();
             
             // Set page title
