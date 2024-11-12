@@ -1,0 +1,82 @@
+{
+    "siteName": "GRADIFY",
+    "navigation": {
+      "logo": {
+        "text": "GRADIFY",
+        "link": "./../dashboard/gradify-static.html"
+      },
+      "links": [
+        { "text": "Home", "link": "#" },
+        { "text": "Lectures", "link": "./../lectures/lectures-page.html" },
+        { "text": "Notes", "link": "./../notes/gradify-notes.html" },
+        { "text": "PYQ", "link": "./../pyq/pyq.html" },
+        { "text": "Grade Predictor", "link": "./../grade_calculator/gradify-calculator.html" },
+        { "text": "About", "link": "./../about/gradify-about.html" },
+        { "text": "Groups", "link": "#" }
+      ]
+    },
+    "hero": {
+      "title": "GRADIFY",
+      "subtitle": "Elevate your Academic journey with our website!",
+      "description": [
+        "Find notes, past question papers, and essential tools to excel academically.",
+        "Join thousands of students who trust us as their go-to resource hub. Take the next step towards success today!"
+      ]
+    },
+    "features": [
+      {
+        "icon": "💻",
+        "text": "Lectures",
+        "link": "./../lectures/lectures-page.html"
+      },
+      {
+        "icon": "✏️",
+        "text": "Notes",
+        "link": "./../notes/gradify-notes.html"
+      },
+      {
+        "icon": "📄",
+        "text": "PYQ",
+        "link": "./../pyq/pyq.html"
+      },
+      {
+        "icon": "✓",
+        "text": "Grade Predictor",
+        "link": "./../grade_calculator/gradify-calculator.html"
+      },
+      {
+        "icon": "👥",
+        "text": "Groups",
+        "link": "#"
+      }
+    ],
+    "importantDocuments": {
+      "title": "Important Documents →",
+      "documents": [
+        {
+          "text": "B.TECH BROCHURE",
+          "link": "#"
+        },
+        {
+          "text": "ACADEMIC CALENDER",
+          "link": "https://drive.google.com/file/d/12EhRZVzYSNLzGvPwx5WtncUs3aWGpdtZ/view?usp=drive_link"
+        },
+        {
+          "text": "HOLIDAYS CALENDER",
+          "link": "#"
+        },
+        {
+          "text": "CGDC REPORT",
+          "link": "https://drive.google.com/file/d/12EBlZ9-E4HM2EqRyat2D8oOufrvRbpCa/view?usp=drive_link"
+        },
+        {
+          "text": "MID-SEM SCHEDULE",
+          "link": "#"
+        },
+        {
+          "text": "END-SEM SCHEDULE",
+          "link": "#"
+        }
+      ]
+    }
+}

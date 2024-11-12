@@ -1,0 +1,88 @@
+{
+  "navigation": {
+    "logo": "GRADIFY",
+    "links": [
+      { "text": "Home", "url": "../dashboard/gradify-static.html" },
+      { "text": "Lectures", "url": "../lectures/lectures-page.html" },
+      { "text": "Notes", "url": "../notes/gradify-notes.html" },
+      { "text": "PYQ", "url": "../pyq/pyq.html" },
+      { "text": "Grade Predictor", "url": "../grade_calculator/gradify-calculator.html" },
+      { "text": "About", "url": "../about/gradify-about.html" },
+      { "text": "Groups", "url": "#" }
+    ]
+  },
+  "semesters": {
+    "1": {
+      "name": "First Semester",
+      "subjects": {
+        "CSE101": {
+          "name": "Introduction to Programming",
+          "lectures": [
+            {
+              "id": "cse101_1",
+              "title": "Introduction to Python",
+              "description": "Basic concepts of Python programming language",
+              "videoUrl": "https://www.youtube.com/embed/rfscVS0vtbw",
+              "thumbnail": "https://img.youtube.com/vi/rfscVS0vtbw/mqdefault.jpg"
+            },
+            {
+              "id": "cse101_2",
+              "title": "Variables and Data Types",
+              "description": "Understanding variables and different data types in Python",
+              "videoUrl": "https://www.youtube.com/embed/cQT33yu9pY8",
+              "thumbnail": "https://img.youtube.com/vi/cQT33yu9pY8/mqdefault.jpg"
+            },
+            {
+              "id": "cse101_3",
+              "title": "Variables and Data Types",
+              "description": "Understanding variables and different data types in Python",
+              "videoUrl": "https://www.youtube.com/embed/cQT33yu9pY8",
+              "thumbnail": "https://img.youtube.com/vi/cQT33yu9pY8/mqdefault.jpg"
+            }
+          ]
+        },
+        "PHY101": {
+          "name": "Physics",
+          "lectures": [
+            {
+              "id": "phy101_1",
+              "title": "Introduction to Mechanics",
+              "description": "Basic concepts of motion and forces",
+              "videoUrl": "https://www.youtube.com/embed/CWxU_7P6HGE",
+              "thumbnail": "https://img.youtube.com/vi/CWxU_7P6HGE/mqdefault.jpg"
+            }
+          ]
+        },
+        "Webdev":{
+          "name": "WEB",
+          "lectures": [
+            {
+              "id": "phy101_1",
+              "title": "Introduction to Mechanics",
+              "description": "Basic concepts of motion and forces",
+              "videoUrl": "https://www.youtube.com/embed/CWxU_7P6HGE",
+              "thumbnail": "https://img.youtube.com/vi/CWxU_7P6HGE/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    },
+    "2": {
+      "name": "Second Semester",
+      "subjects": {
+        "CSE201": {
+          "name": "Data Structures",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Arrays and Linked Lists",
+              "description": "Understanding basic data structures",
+              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

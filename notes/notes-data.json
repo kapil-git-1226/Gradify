@@ -1,0 +1,66 @@
+{
+  "semesters": [
+    {
+      "id": "sem1",
+      "name": "Semester 1",
+      "subjects": [
+        {
+          "id": "math1",
+          "name": "Mathematics I",
+          "notes": [
+            {
+              "title": "Unit 1 - Differential Calculus Notes",
+              "description": "Complete notes covering limits, continuity, and derivatives",
+              "type": "PDF",
+              "driveLink": "https://drive.google.com/file/d/xxx1",
+              "uploadDate": "2024-01-15",
+              "pageCount": 45
+            },
+            {
+              "title": "Unit 2 - Integral Calculus Notes",
+              "description": "Comprehensive notes on indefinite and definite integrals",
+              "type": "PDF",
+              "driveLink": "https://drive.google.com/file/d/xxx2",
+              "uploadDate": "2024-01-17",
+              "pageCount": 38
+            }
+          ]
+        },
+        {
+          "id": "phy1",
+          "name": "Physics I",
+          "notes": [
+            {
+              "title": "Classical Mechanics Complete Notes",
+              "description": "Newton's laws, motion, and conservation principles",
+              "type": "PDF",
+              "driveLink": "https://drive.google.com/file/d/xxx3",
+              "uploadDate": "2024-01-16",
+              "pageCount": 52
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sem2",
+      "name": "Semester 2",
+      "subjects": [
+        {
+          "id": "math2",
+          "name": "Mathematics II",
+          "notes": [
+            {
+              "title": "Linear Algebra Handwritten Notes",
+              "description": "Matrices, determinants, and vector spaces",
+              "type": "PDF",
+              "driveLink": "https://drive.google.com/file/d/xxx4",
+              "uploadDate": "2024-02-15",
+              "pageCount": 65
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
