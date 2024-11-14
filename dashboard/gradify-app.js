@@ -3,7 +3,7 @@ async function loadData() {
     try {
         const response = await fetch('./data.json');
         const data = await response.json();
-        console.log(response);
+        console.log(data);
         initializePage(data);
     } catch (error) {
         console.error('Error loading data:', error);
@@ -17,19 +17,16 @@ function initializePage(data) {
     renderHeroSection(data.hero, data.features, data.importantDocuments);
 }
 
-// Render navigation section
 function renderNavigation(navData) {
     const navContainer = document.querySelector('.nav-container');
-    navContainer.innerHTML = ''; // Clear existing content
+    navContainer.innerHTML = ''; 
 
-    // Add logo
     const logo = document.createElement('a');
     logo.href = navData.logo.link;
     logo.className = 'logo';
     logo.textContent = navData.logo.text;
     navContainer.appendChild(logo);
 
-    // Add navigation links
     const navLinks = document.createElement('nav');
     navLinks.className = 'nav-links';
     navData.links.forEach(link => {
@@ -40,13 +37,11 @@ function renderNavigation(navData) {
     });
     navContainer.appendChild(navLinks);
 
-    // Add profile button
     const profileBtn = document.createElement('button');
     profileBtn.className = 'profile-btn';
     profileBtn.textContent = 'Profile';
     navContainer.appendChild(profileBtn);
 
-    // Add hamburger menu
     const hamburger = document.createElement('button');
     hamburger.className = 'hamburger-menu';
     hamburger.onclick = toggleMenu;
@@ -59,7 +54,6 @@ function renderNavigation(navData) {
     navContainer.appendChild(hamburger);
 }
 
-// Render mobile menu
 function renderMobileMenu(links) {
     const existingMenu = document.getElementById('mobileMenu');
     if (existingMenu) {
@@ -80,10 +74,9 @@ function renderMobileMenu(links) {
     document.body.insertBefore(mobileMenu, document.querySelector('.main-content'));
 }
 
-// Render hero section with features and documents
 function renderHeroSection(hero, features, documents) {
     const mainContent = document.querySelector('.main-content');
-    mainContent.innerHTML = ''; // Clear existing content
+    mainContent.innerHTML = ''; 
 
     const heroSection = document.createElement('div');
     heroSection.className = 'hero-section';
@@ -91,12 +84,10 @@ function renderHeroSection(hero, features, documents) {
     const heroText = document.createElement('div');
     heroText.className = 'hero-text';
 
-    // Add title
     const title = document.createElement('h1');
     title.textContent = hero.title;
     heroText.appendChild(title);
 
-    // Add subtitle and descriptions
     const subtitle = document.createElement('p');
     subtitle.textContent = hero.subtitle;
     heroText.appendChild(subtitle);
@@ -107,7 +98,6 @@ function renderHeroSection(hero, features, documents) {
         heroText.appendChild(p);
     });
 
-    // Add feature buttons
     const featureButtons = document.createElement('div');
     featureButtons.className = 'feature-buttons';
 
@@ -158,7 +148,6 @@ function renderHeroSection(hero, features, documents) {
     mainContent.appendChild(heroSection);
 }
 
-// Toggle mobile menu function
 function toggleMenu() {
     const menu = document.getElementById('mobileMenu');
     const hamburger = document.querySelector('.hamburger-menu');
@@ -166,5 +155,4 @@ function toggleMenu() {
     hamburger.classList.toggle('active');
 }
 
-// Initialize the page when DOM is loaded
 document.addEventListener('DOMContentLoaded', loadData);
