@@ -1,0 +1,369 @@
+<!-- views/dashboard.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRADIFY - Dashboard</title>
+    <style>
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, sans-serif;
+        background-color: #1a1a1a;
+        color: #ffffff;
+        line-height: 1.6;
+      }
+
+      .hamburger-menu {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 22px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+      }
+
+      .hamburger-menu:focus {
+        outline: none;
+      }
+
+      .hamburger-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .hamburger-line:nth-child(1) {
+        top: 0;
+      }
+
+      .hamburger-line:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .hamburger-line:nth-child(3) {
+        bottom: 0;
+      }
+
+      /* Hamburger Animation */
+      .hamburger-menu.active .hamburger-line:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+      }
+
+      .hamburger-menu.active .hamburger-line:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger-menu.active .hamburger-line:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+
+      /* Header styles */
+      .header {
+        border-bottom: 1px solid #2d2d2d;
+        background-color: #1a1a1a;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: #ffffff;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links a {
+        color: #a0a0a0;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        transition: color 0.3s;
+      }
+
+      .nav-links a:hover {
+        color: #ffffff;
+      }
+
+      .profile-btn {
+        display: none;
+        padding: 0.5rem 1rem;
+        border: 1px solid #4a4a4a;
+        border-radius: 9999px;
+        background: transparent;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .profile-btn:hover {
+        background-color: #2d2d2d;
+      }
+
+      /* Mobile menu */
+      .mobile-menu {
+        display: none;
+        background-color: #2d2d2d;
+        padding: 1rem;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+        position: absolute;
+        width: 100%;
+        top: 64px;
+      }
+
+      .mobile-menu.active {
+        display: block;
+        transform: translateY(0);
+      }
+
+      .mobile-menu a {
+        display: block;
+        color: #a0a0a0;
+        text-decoration: none;
+        padding: 0.75rem 0;
+        transition: color 0.3s;
+      }
+
+      .mobile-menu a:hover {
+        color: #ffffff;
+      }
+
+      /* Main content */
+      .main-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 1rem;
+      }
+
+      .hero-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .hero-text {
+        flex: 1;
+      }
+
+      .hero-text h1 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-text p {
+        color: #a0a0a0;
+        margin-bottom: 1rem;
+      }
+
+      /* Feature buttons */
+      .feature-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+      .feature-btn a {
+        text-decoration: none;
+        display: block;
+      }
+
+      .feature-btn {
+        background-color: #2d2d2d;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-align: center;
+        width: 100%;
+        text-align: center;
+      }
+
+      .feature-btn:hover {
+        background-color: #3d3d3d;
+      }
+
+      .feature-btn span {
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Important documents */
+      .important-docs {
+        margin-top: 2rem;
+      }
+
+      .important-docs h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .docs-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .doc-link {
+        background-color: #6b46c1;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.75rem 1rem;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color 0.3s;
+      }
+
+      .doc-link:hover {
+        background-color: #553c9a;
+      }
+
+      /* Responsive design */
+      @media (min-width: 768px) {
+        .hamburger-menu {
+          display: none;
+        }
+
+        .nav-links {
+          display: flex;
+          gap: 2rem;
+        }
+
+        .profile-btn {
+          display: block;
+        }
+
+        .feature-buttons {
+          grid-template-columns: repeat(5, 1fr);
+        }
+
+        .docs-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .hero-section {
+          flex-direction: row;
+        }
+
+        .hero-illustration {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ... (rest of the CSS remains the same) */
+    </style>
+</head>
+<body>
+    <%- include('partials/navbar') %>
+
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-text">
+                <h1>GRADIFY</h1>
+                <p>Elevate your Academic journey with our website!</p>
+                <p>Find notes, past question papers, and essential tools to excel academically.</p>
+                <p>Join thousands of students who trust us as their go-to resource hub. Take the next step towards success today!</p>
+                
+                <div class="feature-buttons">
+                    <a href="/lectures">
+                        <button class="feature-btn">
+                            <span>💻</span>
+                            Lectures
+                        </button>
+                    </a>
+                    <a href="/notes">
+                        <button class="feature-btn">
+                            <span>✏</span>
+                            Notes
+                        </button>
+                    </a>
+                    <a href="/pyqs">
+                        <button class="feature-btn">
+                            <span>📄</span>
+                            PYQ
+                        </button>
+                    </a>
+                    <a href="/grade-predictor">
+                        <button class="feature-btn">
+                            <span>✓</span>
+                            Grade Predictor
+                        </button>
+                    </a>
+                    <a href="/groups">
+                        <button class="feature-btn">
+                            <span>👥</span>
+                            Groups
+                        </button>
+                    </a>
+                </div>
+
+                <div class="important-docs">
+                    <h2>Important Documents →</h2>
+                    <div class="docs-grid">
+                        <a href="#" class="doc-link">B.TECH BROCHURE ↗</a>
+                        <a href="https://drive.google.com/file/d/12EhRZVzYSNLzGvPwx5WtncUs3aWGpdtZ/view?usp=drive_link" class="doc-link">ACADEMIC CALENDER ↗</a>
+                        <a href="#" class="doc-link">HOLIDAYS CALENDER ↗</a>
+                        <a href="https://drive.google.com/file/d/12EBlZ9-E4HM2EqRyat2D8oOufrvRbpCa/view?usp=drive_link" class="doc-link">CGDC REPORT ↗</a>
+                        <a href="#" class="doc-link">MID-SEM SCHEDULE ↗</a>
+                        <a href="#" class="doc-link">END-SEM SCHEDULE ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Add your existing JavaScript for hamburger menu functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            hamburgerMenu.addEventListener('click', () => {
+                hamburgerMenu.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
