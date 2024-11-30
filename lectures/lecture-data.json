@@ -4,8 +4,8 @@
     "links": [
       { "text": "Home", "url": "./../dashboard/gradify-html.html" },
       { "text": "Lectures", "url": "./../lectures/lecture-interface.html" },
-      { "text": "Notes", "url": "./../notes/notes-page.html" },
-      { "text": "PYQ", "url": "./../pyqs/pyqs-page.html" },
+      { "text": "Notes", "url": "./../notes/Gradify - Notes.html" },
+      { "text": "PYQ", "url": "./../pyqs/pyqs.html" },
       { "text": "Grade Predictor", "url": "./../Grade_predictor/grade_predictor.html" },
       { "text": "About", "url": "./../about/about-page.html" },
       { "text": "Groups", "url": "./../Groups/group-page.html"}

@@ -8,8 +8,8 @@
       "links": [
         { "text": "Home", "link": "./../dashboard/gradify-html.html" },
         { "text": "Lectures", "link": "./../lectures/lecture-interface.html" },
-        { "text": "Notes", "link": "./../notes/notes-page.html" },
-        { "text": "PYQ", "link": "./../pyqs/pyqs-page.html" },
+        { "text": "Notes", "link": "./../notes/Gradify - Notes.html" },
+        { "text": "PYQ", "link": "./../pyqs/pyqs.html" },
         { "text": "Grade Predictor", "link": "./../Grade_predictor/grade_predictor.html" },
         { "text": "About", "link": "./../about/about-page.html" },
         { "text": "Groups", "link": "./../Groups/group-page.html" }
@@ -32,12 +32,12 @@
       {
         "icon": "✏️",
         "text": "Notes",
-        "link": "./../notes/notes-page.html"
+        "link": "./../notes/Gradify - Notes.html"
       },
       {
         "icon": "📄",
         "text": "PYQ",
-        "link": "./../pyqs/pyqs-page.html"
+        "link": "./../pyqs/pyqs.html"
       },
       {
         "icon": "✓",
