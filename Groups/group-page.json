@@ -3,7 +3,7 @@
   "navigation": {
     "logo": "GRADIFY",
     "links": [
-      { "text": "Home", "url": "./../dashboard/gradify-html.html" },
+      { "text": "Home", "url": "/dashboard" },
       { "text": "Lectures", "url": "./../lectures/lecture-interface.html" },
       { "text": "Notes", "url": "./../notes/notes-page.html" },
       { "text": "PYQ", "url": "./../pyqs/pyqs-page.html" },
