@@ -1,10 +1,10 @@
 class PYQApp {
     constructor() {
       this.subjects = {
-        '1': ['Introduction to Programming', 'Physics'],
-        '2': ['Data Structures', 'Computer Networks'],
+        '1': ['C++', 'Engineering Mathematics'],
+        '2': ['Data Structures Algorithms', 'Fundamental of Digital Logics'],
         '3': ['Operating Systems', 'Database Management'],
-        '4': ['Software Engineering', 'Machine Learning'],
+        '4': ['Software Engineering', 'Discrete Mathematics'],
         '5': ['Artificial Intelligence', 'Cyber Security'],
         '6': ['Web Technologies', 'Mobile Application Development'],
         '7': ['Data Science', 'Blockchain'],

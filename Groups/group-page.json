@@ -5,8 +5,8 @@
     "links": [
       { "text": "Home", "url": "/dashboard" },
       { "text": "Lectures", "url": "./../lectures/lecture-interface.html" },
-      { "text": "Notes", "url": "./../notes/notes-page.html" },
-      { "text": "PYQ", "url": "./../pyqs/pyqs-page.html" },
+      { "text": "Notes", "url": "./../notes/Gradify - Notes.html" },
+      { "text": "PYQ", "url": "./../pyqs/pyqs.html" },
       { "text": "Grade Predictor", "url": "./../Grade_predictor/grade_predictor.html" },
       { "text": "About", "url": "./../about/about-page.html" },
       { "text": "Groups", "url": "./../Groups/group-page.html" }
@@ -45,13 +45,6 @@
               "description": "Join the discussion group for Mathematical fundamentals",
               "whatsappUrl": "https://chat.whatsapp.com/I9pnkOwqC08JVdQgNV0zeM ",
               "thumbnail": "./../Resources/group.png"
-            },
-            {
-              "id": "cse101_2",
-              "title": "Variables & Data Types Group",
-              "description": "WhatsApp group for Python variables and data types discussion",
-              "whatsappUrl": "https://chat.whatsapp.com/example2",
-              "thumbnail": "./../Resources/group.png"
             }
           ]
         },
@@ -60,10 +53,10 @@
           "notes": [
             {
               "id": "phy101_1",
-              "title": "Mechanics Discussion Group",
+              "title": "Physics Group",
               "description": "Join the Physics mechanics study group",
-              "whatsappUrl": "https://chat.whatsapp.com/example3",
-              "thumbnail": "/assets/images/whatsapp-group.png"
+              "whatsappUrl": "https://chat.whatsapp.com/G5eeR875iTp5ASMjYHqtjx",
+              "thumbnail": "./../Resources/group.png"
             }
           ]
         }
@@ -73,16 +66,28 @@
       "name": "Second Semester",
       "subjects": {
         "CSE201": {
-          "name": "Data Structures",
+          "name": "Data Structures Algorithms",
           "notes": [
             {
               "id": "cse201_1",
-              "title": "DS Study Group",
-              "description": "WhatsApp group for Data Structures discussions",
-              "whatsappUrl": "https://chat.whatsapp.com/example4",
-              "thumbnail": "/assets/images/whatsapp-group.png"
+              "title": "DSA Group",
+              "description": "WhatsApp group for Data Structures discussions and Algrorithms",
+              "whatsappUrl": "https://chat.whatsapp.com/CZ2KN9lLI4mJ1E6I2lCUDD",
+              "thumbnail": "./../Resources/group.png"
             }
           ]
+        },
+        "CSE202": {
+            "name": "Applied Data Science",
+            "notes": [
+              {
+                "id": "cse201_1",
+                "title": "Applied Data Science",
+                "description": "WhatsApp group for Applied Data Science",
+                "whatsappUrl": "https://chat.whatsapp.com/JjMOkHNWPemFJZuzeKDy4I",
+                "thumbnail": "./../Resources/group.png"
+              }
+            ]
         }
       }
     },
@@ -90,33 +95,26 @@
       "name": "Third Semester",
       "subjects": {
         "CSE101": {
-          "name": "Introduction to Programming",
+          "name": "Java Programming",
           "notes": [
             {
               "id": "cse101_1",
-              "title": "Python Basics Group",
-              "description": "Join the discussion group for Python fundamentals",
-              "whatsappUrl": "https://chat.whatsapp.com/I9pnkOwqC08JVdQgNV0zeM ",
-              "thumbnail": "/assets/images/whatsapp-group.png"
-            },
-            {
-              "id": "cse101_2",
-              "title": "Variables & Data Types Group",
-              "description": "WhatsApp group for Python variables and data types discussion",
-              "whatsappUrl": "https://chat.whatsapp.com/example2",
-              "thumbnail": "/assets/images/whatsapp-group.png"
+              "title": "Java Programming",
+              "description": "Join the discussion group for Java Programming",
+              "whatsappUrl": "https://chat.whatsapp.com/GXN2yqKWF0eEv6NS0X0imN",
+              "thumbnail": "./../Resources/group.png"
             }
           ]
         },
         "PHY101": {
-          "name": "Physics",
+          "name": "Web Programming",
           "notes": [
             {
-              "id": "phy101_1",
-              "title": "Mechanics Discussion Group",
-              "description": "Join the Physics mechanics study group",
-              "whatsappUrl": "https://chat.whatsapp.com/example3",
-              "thumbnail": "/assets/images/whatsapp-group.png"
+              "id": "cse101_2",
+              "title": "Web Programming",
+              "description": "WhatsApp group for Web programming",
+              "whatsappUrl": "https://chat.whatsapp.com/EdzkzFSOr0a0oB7baQp455",
+              "thumbnail": "./../Resources/group.png"
             }
           ]
         }
@@ -126,33 +124,26 @@
       "name": "Fourth Semester",
       "subjects": {
         "CSE101": {
-          "name": "Introduction to Programming",
+          "name": "Discrete Mathematics",
           "notes": [
             {
               "id": "cse101_1",
-              "title": "Python Basics Group",
-              "description": "Join the discussion group for Python fundamentals",
-              "whatsappUrl": "https://chat.whatsapp.com/I9pnkOwqC08JVdQgNV0zeM ",
-              "thumbnail": "/assets/images/whatsapp-group.png"
-            },
-            {
-              "id": "cse101_2",
-              "title": "Variables & Data Types Group",
-              "description": "WhatsApp group for Python variables and data types discussion",
-              "whatsappUrl": "https://chat.whatsapp.com/example2",
-              "thumbnail": "/assets/images/whatsapp-group.png"
+              "title": "Discrete Mathematics",
+              "description": "Join the discussion group for Discrete Mathematics",
+              "whatsappUrl": "https://chat.whatsapp.com/KtEyj4m0nqY7FyLnQZ1Fi1",
+              "thumbnail": "./../Resources/group.png"
             }
           ]
         },
         "PHY101": {
-          "name": "Physics",
+          "name": "Software Engineering",
           "notes": [
             {
               "id": "phy101_1",
-              "title": "Mechanics Discussion Group",
-              "description": "Join the Physics mechanics study group",
-              "whatsappUrl": "https://chat.whatsapp.com/example3",
-              "thumbnail": "/assets/images/whatsapp-group.png"
+              "title": "Software Engineering",
+              "description": "Join the Software Engineering study group",
+              "whatsappUrl": "https://chat.whatsapp.com/FjzEb94veV75pqeVLWwH7L",
+              "thumbnail": "./../Resources/group.png"
             }
           ]
         }

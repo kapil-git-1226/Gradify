@@ -30,6 +30,9 @@ app.use('/pyqs', express.static(path.join(__dirname, 'pyqs')));
 app.get('/dashboard', (req, res) => {
   res.render('dashboard');
 });
+app.get('/dashboards',(req,res)=>{
+  res.render('dashboard');
+})
 app.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, 'notes', 'Gradify - Notes.html'));
 });

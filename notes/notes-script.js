@@ -1,10 +1,10 @@
 class NotesApp {
     constructor() {
       this.subjects = {
-        '1': ['Mathematics', 'Physics', 'Chemistry', 'Programming'],
-        '2': ['Data Structures', 'Computer Networks', 'Digital Logic', 'Linear Algebra','c++'],
-        '3': ['Operating Systems', 'Database Management', 'Computer Architecture', 'Statistics'],
-        '4': ['Software Engineering', 'Machine Learning', 'Cloud Computing', 'Algorithms'],
+        '1': ['Engineering Mathematics', 'OOPS With C++'],
+        '2': ['Data Structures'],
+        '3': ['Web Programming', 'Java Programming'],
+        '4': ['Discrete Mathematics','Software Engineering'],
         '5': ['Artificial Intelligence', 'Cyber Security', 'Computer Graphics', 'Network Security'],
         '6': ['Web Technologies', 'Mobile Application Development', 'Big Data', 'IoT'],
         '7': ['Data Science', 'Blockchain', 'Computer Vision', 'Advanced Networking'],

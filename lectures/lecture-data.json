@@ -16,52 +16,40 @@
       "name": "First Semester",
       "subjects": {
         "CSE101": {
-          "name": "Introduction to Programming",
+          "name": "Introduction to Engineering Mathematics",
           "lectures": [
             {
               "id": "cse101_1",
-              "title": "Introduction to Python",
-              "description": "Basic concepts of Python programming language",
-              "videoUrl": "https://www.youtube.com/embed/rfscVS0vtbw",
-              "thumbnail": "https://img.youtube.com/vi/rfscVS0vtbw/mqdefault.jpg"
+              "title": "Basic Mathematics",
+              "description": "Basic concepts of Engineering mathematics",
+              "videoUrl": "https://youtu.be/eTp5wq-cSXY?si=08Ne3_8wcn-qBdSB",
+              "thumbnail": "./../Resources/videopage.jpg"
             },
             {
-              "id": "cse101_2",
-              "title": "Variables and Data Types",
-              "description": "Understanding variables and different data types in Python",
-              "videoUrl": "https://www.youtube.com/embed/cQT33yu9pY8",
-              "thumbnail": "https://img.youtube.com/vi/cQT33yu9pY8/mqdefault.jpg"
-            },
-            {
-              "id": "cse101_3",
-              "title": "Variables and Data Types",
-              "description": "Understanding variables and different data types in Python",
-              "videoUrl": "https://www.youtube.com/embed/cQT33yu9pY8",
-              "thumbnail": "https://img.youtube.com/vi/cQT33yu9pY8/mqdefault.jpg"
+              "id": "cse101_1",
+              "title": "Maths Revision",
+              "description": "Revision of Maths Concepts",
+              "videoUrl": "https://www.youtube.com/live/LLFC1xwZ5z0?si=zQ3X0LBu8I5V-Cg6",
+              "thumbnail": "./../Resources/videopage.jpg"
             }
           ]
         },
         "PHY101": {
-          "name": "Physics",
+          "name": "C++",
           "lectures": [
             {
-              "id": "phy101_1",
-              "title": "Introduction to Mechanics",
-              "description": "Basic concepts of motion and forces",
-              "videoUrl": "https://www.youtube.com/embed/CWxU_7P6HGE",
-              "thumbnail": "https://img.youtube.com/vi/CWxU_7P6HGE/mqdefault.jpg"
-            }
-          ]
-        },
-        "Webdev":{
-          "name": "WEB",
-          "lectures": [
+              "id": "cse101_2",
+              "title": "C++ Tutorial",
+              "description": "Understanding C++",
+              "videoUrl": "https://youtu.be/e7sAf4SbS_g?si=92q_HJQl6TX3StVc",
+              "thumbnail": "./../Resources/videopage.jpg"
+            },
             {
-              "id": "phy101_1",
-              "title": "Introduction to Mechanics",
-              "description": "Basic concepts of motion and forces",
-              "videoUrl": "https://www.youtube.com/embed/CWxU_7P6HGE",
-              "thumbnail": "https://img.youtube.com/vi/CWxU_7P6HGE/mqdefault.jpg"
+              "id": "cse101_2",
+              "title": "C++ One Shot",
+              "description": "C++ One Shot",
+              "videoUrl": "https://youtu.be/8jLOx1hD3_o?si=XOCPmRNjRL98xYCR",
+              "thumbnail": "./../Resources/videopage.jpg"
             }
           ]
         }
@@ -71,13 +59,13 @@
       "name": "Second Semester",
       "subjects": {
         "CSE201": {
-          "name": "Data Structures",
+          "name": "Data Structures Algorithms",
           "lectures": [
             {
               "id": "cse201_1",
-              "title": "Arrays and Linked Lists",
-              "description": "Understanding basic data structures",
-              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
+              "title": "Data Structure and Algorithms",
+              "description": "Understanding Data Structures Algorithms",
+              "videoUrl": "https://youtu.be/RBSGKlAvoiM?si=x_dEed2eJUIsgO1E",
               "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
             }
           ]
@@ -88,14 +76,26 @@
       "name": "Third Semester",
       "subjects": {
         "CSE201": {
-          "name": "Data Structures",
+          "name": "Web Programming",
           "lectures": [
             {
               "id": "cse201_1",
-              "title": "Arrays and Linked Lists",
-              "description": "Understanding basic data structures",
-              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
-              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+              "title": "Web Programming",
+              "description": "Understanding Web Programming",
+              "videoUrl": "https://youtu.be/HcOc7P5BMi4?si=GMKkELoR5E0W8298",
+              "thumbnail": "./../Resources/videopage.jpg"
+            }
+          ]
+        },
+        "CSE202": {
+          "name": "Java Programming",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Java Programming",
+              "description": "Java Programming",
+              "videoUrl": "https://youtu.be/UmnCZ7-9yDY?si=lT3cY-e3olKqQjbZ",
+              "thumbnail": "./../Resources/videopage.jpg"
             }
           ]
         }
@@ -105,14 +105,26 @@
       "name": "Fourth Semester",
       "subjects": {
         "CSE201": {
-          "name": "Data Structures",
+          "name": "Software Engineering",
           "lectures": [
             {
               "id": "cse201_1",
-              "title": "Arrays and Linked Lists",
-              "description": "Understanding basic data structures",
-              "videoUrl": "https://www.youtube.com/embed/zg9ih6SVACc",
-              "thumbnail": "https://img.youtube.com/vi/zg9ih6SVACc/mqdefault.jpg"
+              "title": "Software Engineering",
+              "description": "Basics of Software Engineering ",
+              "videoUrl": "https://youtu.be/NlLM3sVF8wY?si=dxZyBq_Yco_vbkcC",
+              "thumbnail": "./../Resources/videopage.jpg"
+            }
+          ]
+        },
+        "CSE202": {
+          "name": "Discrete Mathematics",
+          "lectures": [
+            {
+              "id": "cse201_1",
+              "title": "Discrete Mathematics",
+              "description": "Discrete Mathematics",
+              "videoUrl": "https://youtu.be/3zOtLEeHygg?si=kOASV0lGVyufx1Pl",
+              "thumbnail": "./../Resources/videopage.jpg"
             }
           ]
         }
